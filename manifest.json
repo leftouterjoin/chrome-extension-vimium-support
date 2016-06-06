@@ -1,0 +1,13 @@
+{
+  "name": "vimium-support",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "vimium-support",
+  "content_scripts": [
+    {
+      "matches": ["http://*/*"],
+      "js": ["jquery-2.1.4.min.js", "vimium-support.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
